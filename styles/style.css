@@ -1,0 +1,100 @@
+body {
+  background-color: hsl(0,0%,95%);
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flex-container div {
+  background-color: purple;
+}
+
+.flex-container h2 {
+  text-transform: uppercase;
+  color: hsl(0,0%,95%);
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.flex-container p {
+  color: hsla(0,0%,100%,0.75);
+}
+
+.flex-container div:nth-child(1) {
+  background-color: hsl(31,77%,52%);
+}
+
+.flex-container div:nth-child(2) {
+  background-color: hsl(184,100%,22%);
+}
+
+.flex-container div:nth-child(3) {
+  background-color: hsl(179,100%,13%);
+}
+
+.flex-container button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 50px;
+  border: hsl(0, 0%, 95%) 2px solid;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.flex-container button:hover {
+  border: hsl(0,0%,95%) 2px solid;
+}
+
+.flex-container div:nth-child(1) button {
+  color: hsl(31,77%,52%);
+}
+
+.flex-container div:nth-child(1) button:hover {
+  background-color: hsl(31,77%,52%);
+  color: hsl(0, 0%, 95%);
+}
+
+.flex-container div:nth-child(2) button {
+  color: hsl(184,100%,22%);
+}
+
+.flex-container div:nth-child(2) button:hover {
+  background-color: hsl(184,100%,22%);
+  color: hsl(0, 0%, 95%);
+}
+
+.flex-container div:nth-child(3) button {
+  color: hsl(179,100%,13%);
+}
+
+.flex-container div:nth-child(3) button:hover {
+  background-color: hsl(179,100%,13%);
+  color: hsl(0, 0%, 95%);
+}
+
+.sedans {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-image: url('/images/icon-sedans.svg')
+}
+
+.suvs {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-image: url('/images/icon-suvs.svg')
+}
+
+.luxury {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-image: url('/images/icon-luxury.svg')
+}
