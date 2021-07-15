@@ -8,10 +8,14 @@ body {
   display: flex;
   border-radius: 10px;
   overflow: hidden;
+  width: 921px;
 }
 
 .flex-container div {
   background-color: purple;
+  width: 307px;
+  padding: 49px;
+  line-height: 25px;
 }
 
 .flex-container h2 {
