@@ -1,104 +1,147 @@
-body {
-  background-color: hsl(0,0%,95%);
+* {
   font-size: 15px;
   font-family: 'Lexend Deca', sans-serif;
 }
 
-.flex-container {
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 921px;
+body {
+  background-color: hsl(0,0%,95%);
+  padding: 0;
+  margin: 0;
 }
 
-.flex-container div {
-  background-color: purple;
+/* Overall container styles */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  color: hsl(0,0%,95%);
+  height: 100vh;
+}
+
+.flex-container > div {
+  box-sizing: border-box;
   width: 307px;
-  padding: 49px;
+  min-width: 307px;
+  height: 500px;
+  min-height: 500px;
+  padding: 45px 49px;
   line-height: 25px;
+  align-self: center;
 }
 
 .flex-container h2 {
   text-transform: uppercase;
-  color: hsl(0,0%,95%);
   font-family: 'Big Shoulders Display', cursive;
+  padding-top: 8px;
+  font-size: 40px;
 }
 
 .flex-container p {
-  color: hsla(0,0%,100%,0.75);
+  padding-bottom: 70px;
 }
 
-.flex-container div:nth-child(1) {
-  background-color: hsl(31,77%,52%);
-}
+/* Learn More Button */
 
-.flex-container div:nth-child(2) {
-  background-color: hsl(184,100%,22%);
-}
-
-.flex-container div:nth-child(3) {
-  background-color: hsl(179,100%,13%);
-}
-
-.flex-container button {
+.learnmore {
   background-color: hsl(0, 0%, 95%);
   border-radius: 50px;
   border: hsl(0, 0%, 95%) 2px solid;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 30px;
+  width: 150px;
+  height: 50px;
 }
 
-.flex-container button:hover {
-  border: hsl(0,0%,95%) 2px solid;
+.learnmore:hover {
+  color: hsl(0,0%,95%);
 }
 
-.flex-container div:nth-child(1) button {
+/* Styles for each of the three specific containers */
+
+.sedans-container {
+  background-color: hsl(31,77%,52%);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.sedans-container button {
   color: hsl(31,77%,52%);
 }
 
-.flex-container div:nth-child(1) button:hover {
+.sedans-container button:hover {
   background-color: hsl(31,77%,52%);
-  color: hsl(0, 0%, 95%);
 }
 
-.flex-container div:nth-child(2) button {
+.suvs-container {
+  background-color: hsl(184,100%,22%);
+}
+
+.suvs-container button {
   color: hsl(184,100%,22%);
 }
 
-.flex-container div:nth-child(2) button:hover {
+.suvs-container button:hover {
   background-color: hsl(184,100%,22%);
-  color: hsl(0, 0%, 95%);
 }
 
-.flex-container div:nth-child(3) button {
+.luxury-container {
+  background-color: hsl(179,100%,13%);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.luxury-container button {
   color: hsl(179,100%,13%);
 }
 
-.flex-container div:nth-child(3) button:hover {
+.luxury-container button:hover {
   background-color: hsl(179,100%,13%);
-  color: hsl(0, 0%, 95%);
 }
 
-.sedans {
+/* Icons */
+
+.icon {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 64px;
+  height: 40px;
   background-repeat: no-repeat;
+}
+
+.sedans-icon {
   background-image: url('/images/icon-sedans.svg')
 }
 
-.suvs {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-repeat: no-repeat;
+.suvs-icon {
   background-image: url('/images/icon-suvs.svg')
 }
 
-.luxury {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-repeat: no-repeat;
+.luxury-icon {
   background-image: url('/images/icon-luxury.svg')
+}
+
+/* Smaller devices */
+
+@media screen and (max-width: 375px) {
+  .flex-container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .flex-container > div {
+    width: 327px;
+    min-width: 327px;
+    height: 442px;
+    min-height: 442px;
+  }
+
+  .sedans-container {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .luxury-container {
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .flex-container p {
+    padding-bottom: 15px;
+  }
 }
