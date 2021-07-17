@@ -120,7 +120,7 @@ body {
 
 /* Smaller devices */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 750px) {
   .flex-container {
     flex-direction: column;
     height: 100%;
