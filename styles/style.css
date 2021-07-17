@@ -107,15 +107,15 @@ body {
 }
 
 .sedans-icon {
-  background-image: url('/images/icon-sedans.svg')
+  background-image: url('../images/icon-sedans.svg')
 }
 
 .suvs-icon {
-  background-image: url('/images/icon-suvs.svg')
+  background-image: url('../images/icon-suvs.svg')
 }
 
 .luxury-icon {
-  background-image: url('/images/icon-luxury.svg')
+  background-image: url('../images/icon-luxury.svg')
 }
 
 /* Smaller devices */
